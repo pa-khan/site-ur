@@ -1,0 +1,83 @@
+.icon-arrow-left-blue {
+  background-image: url(../../img/sprite.png);
+  background-position: -201px -97px;
+  width: 32px;
+  height: 15px; }
+
+.icon-arrow-left-gray {
+  background-image: url(../../img/sprite.png);
+  background-position: -201px -67px;
+  width: 32px;
+  height: 15px; }
+
+.icon-arrow-right-blue {
+  background-image: url(../../img/sprite.png);
+  background-position: -201px -82px;
+  width: 32px;
+  height: 15px; }
+
+.icon-arrow-right-gray {
+  background-image: url(../../img/sprite.png);
+  background-position: -201px -52px;
+  width: 32px;
+  height: 15px; }
+
+.icon-balance {
+  background-image: url(../../img/sprite.png);
+  background-position: -100px -51px;
+  width: 51px;
+  height: 51px; }
+
+.icon-bank-dollar {
+  background-image: url(../../img/sprite.png);
+  background-position: -151px 0px;
+  width: 50px;
+  height: 51px; }
+
+.icon-bank-dot {
+  background-image: url(../../img/sprite.png);
+  background-position: -100px 0px;
+  width: 51px;
+  height: 51px; }
+
+.icon-case {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px 0px;
+  width: 63px;
+  height: 53px; }
+
+.icon-col {
+  background-image: url(../../img/sprite.png);
+  background-position: -151px -51px;
+  width: 45px;
+  height: 51px; }
+
+.icon-court {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -129px;
+  width: 52px;
+  height: 49px; }
+
+.icon-doc {
+  background-image: url(../../img/sprite.png);
+  background-position: -201px 0px;
+  width: 38px;
+  height: 52px; }
+
+.icon-profile {
+  background-image: url(../../img/sprite.png);
+  background-position: -52px -129px;
+  width: 51px;
+  height: 41px; }
+
+.icon-sheet-left {
+  background-image: url(../../img/sprite.png);
+  background-position: -63px 0px;
+  width: 37px;
+  height: 76px; }
+
+.icon-sheet-right {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -53px;
+  width: 37px;
+  height: 76px; }

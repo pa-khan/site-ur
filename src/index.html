@@ -7,8 +7,9 @@
 	<link rel="shortcut icon" href="upload/favicon.png" type="image/png">
 	<link rel="stylesheet" href="template/styles/css/style.css" />
 	<link rel="stylesheet" href="template/styles/css/responsive.css" />
-	<script src="template/scripts/libs.min.js"></script>
+	<script src="template/scripts/libs.js"></script>
 	<script src="template/scripts/common.js"></script>
+	
 	<!--[if lt IE 9]>
 	<script>
 		document.createElement('header');
@@ -22,14 +23,546 @@
 	<![endif]-->
 </head>
 <body>
-	<header class="header">
-		
+	<div class="popup popup_order" id="popup-order">
+		<div class="popup__title">Получить консультацию</div>
+		<input type="text" class="popup__input input" placeholder="Имя">
+		<input type="text" class="popup__input input" placeholder="Email">
+		<button class="popup__button button button_blue">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+	</div>
+	<div class="popup popup_order" id="popup-service">
+		<div class="popup__title">Заказ услуги</div>
+		<input type="text" class="popup__input input" placeholder="Имя">
+		<input type="text" class="popup__input input" placeholder="Email">
+		<button class="popup__button button button_blue">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+	</div>
+	<div class="panel">
+		<div class="panel__logo"><img src="upload/logo/logo-block.png" alt=""></div>
+		<div class="panel__nav">
+			<ul>
+				<li><a href="#services-link">Юридические услуги</a></li>
+				<li><a href="#portfolio-link">КЕЙСЫ</a></li>
+				<li><a href="#workers-link">НАША КОМАНДА</a></li>
+				<li><a href="#result">РЕЗУЛЬТАТЫ</a></li>
+				<li><a href="#contacts">КОНТАКТЫ</a></li>
+			</ul>
+		</div>
+		<div class="panel__contacts">
+			<div class="panel__phone"><a href="tel:84950000000">8 (495) 000-00-00</a></div>
+			<div class="panel__time"><strong>Время работы:</strong> Пн-пт с 10:00 до 20:00</div>
+			<div class="panel__address"><strong>Адрес:</strong> ул. Сущёвский Вал, 74</div>
+			<a data-fancybox data-src="#popup-order" href="javascript:;" class="panel__button button button_transparent">Бесплатная консультация</a>
+		</div>
+	</div>
+	<div id="fullpage">
+	<header class="section header fondation">
+		<div class="container">
+			<div class="header__wrap">
+				<div class="header__title">
+					<p>Юридические услуги.</p>
+					<p>Развитие и помощь бизнесу.</p>
+				</div>
+				<div class="header__desc">Работаем без предоплаты. Оплата по факту результата.</div>
+			</div>
+			<div class="header__share share">
+				<div class="share__title">АКЦИИ МЕСЯЦА</div>
+				<div class="share__list">
+					<ul>
+						<li>Регистрация ООО/МФК/иностранного представительства с <strong>30% скидкой</strong> только до конца месяца!</li>
+						<li>Закажите смену участника до конца месяца с <strong>20% скидкой</strong></li>
+						<li>Закажите уменьшение НДС до конца месяца с <strong>10% скидкой</strong></li>
+					</ul>
+				</div>
+				<a data-fancybox data-src="#popup-service" class="share__button button button_red">ЗАКАЗАТЬ УСЛУГУ</a>
+			</div>
+			<a href="#services" class="header__scroll"><span>прокрутите вниз</span><i class="icon icon-arrow-right-gray"></i></a>
+		</div>
 	</header>
-	<main class="main">
-		
-	</main>
-	<footer class="footer">
-		
-	</footer>
+	<div class="section services fondation" id="services-link">
+		<div class="container">
+			<div class="services__title title">Юридические услуги</div>
+			<div class="services__list row_line">
+				<a href="#cases/slide1" class="services__item col_line">
+					<div class="services__icon"><i class="icon icon-bank-dollar"></i></div>
+					<div class="services__text">Готовые фирмы со<br>счетом</div>
+				</a>
+				<a href="#cases/slide2" class="services__item col_line">
+					<div class="services__icon"><i class="icon icon-profile"></i></div>
+					<div class="services__text">Выход участника<br>без нотариуса</div>
+				</a>
+				<a href="#cases/slide3" class="services__item col_line">
+					<div class="services__icon"><i class="icon icon-case"></i></div>
+					<div class="services__text">Вывод заблокированных <br>по 115-ФЗ денежных <br>средств </div>
+				</a>
+				<a href="#cases/slide4" class="services__item col_line">
+					<div class="services__icon"><i class="icon icon-bank-dot"></i></div>
+					<div class="services__text">Оспаривание решений <br>налоговой инспекции</div>
+				</a>
+				<a href="#cases/slide5" class="services__item col_line">
+					<div class="services__icon"><i class="icon icon-balance"></i></div>
+					<div class="services__text">Судебные тяжбы <br>по хозяйственным<br>спорам</div>
+				</a>
+				<a href="#cases/slide5" class="services__item col_line">
+					<div class="services__icon"><i class="icon icon-doc"></i></div>
+					<div class="services__text">Уменьшение налогов</div>
+				</a>
+				<a href="#cases/slide6" class="services__item col_line">
+					<div class="services__icon"><i class="icon icon-court"></i></div>
+					<div class="services__text">Сделки <br>с недвижимостью</div>
+				</a>
+				<a href="#cases/slide7" class="services__item col_line">
+					<div class="services__icon"><i class="icon icon-col"></i></div>
+					<div class="services__text">Регистрация МФК, <br>МКК, КПК, ООО, АО, <br>ИП, НКО</div>
+				</a>
+			</div>
+			<div class="services__content">
+				<div class="services__desc">Также мы предоставляем <strong>уникальные услуги:</strong></div>
+				<div class="services__ul">
+					<ul>
+						<li>регистрация КПК (кредитного потребительского коопертаива);</li>
+						<li>получение лицензии МФК (микрофинансовая компания);</li>
+						<li>выход участника без нотариуса;</li>
+						<li>вывод заблокированных денег</li>
+					</ul>
+				</div>
+				<a data-fancybox data-src="#popup-order" class="services__button button button_blue">ПОЛУЧИТЬ Бесплатную консультацию</a>
+			</div>
+		</div>
+
+	</div>
+	<div class="section slider" id="portfolio-link">
+		<div class="slider__wrap">
+			<div class="slide slider__item slider__item-1 fondation" data-anchor="slide1">
+				<div class="container">
+					<div class="slider__title title">Услуги</div>
+					<div class="slider__content">
+						<div class="slider__subtitle">Готовые фирмы со счетом</div>
+						<div class="slider__text">
+							<p>Нет времени ждать, когда будет зарегистрирована ваша фирма или когда банк одобрит вам открытие расчетного счета; хотите скрыть аффилированность конечного бенефициара  или же вы просто дисквалифицированы и не можете больше заниматься предпринимательской деятельностью от своего имени.</p>
+							<p>Наши профессионалы имеют колоссальный опыт в решении данных проблем.</p>
+						</div>
+						<a data-fancybox data-src="#popup-order" class="slider__button button button_blue">ПОЛУЧИТЬ Бесплатную консультацию</a>
+					</div>
+					<div class="slider__image"><img src="upload/slider/1.png" alt=""></div>
+				</div>
+			</div>
+			<div class="slide slider__item slider__item-2 fondation" data-anchor="slide2">
+				<div class="container">
+					<div class="slider__title title">Услуги</div>
+					<div class="slider__content">
+						<div class="slider__subtitle">ВыХод УЧАСТНИКА БЕЗ НОТАРИУСА</div>
+						<div class="slider__text">
+							<p>С принятием поправок в законодательство о государственной регистрации и об ООО, вступивших в силу с 1 января 2016 года, появилось требование о том, что решение общего собрания участников общества об увеличении уставного капитала подлежит нотариальному удостоверению. </p>
+							<p>Нотариальное удостоверение требуется для всех случаев, даже если уставом определен иной способ подтверждения принятия решений собранием участников. То же самое касается и заявления о выходе участника. Но зачастую связи со старыми участниками уже нет, а их присутствие в ЕГРЮЛ крайне сильно затрудняет работу.</p>
+							<p>Сделаем полную смену состава участников Вашей компании, выход старого/вход нового учредителя, без нотариуса, без Вашего присутствия, все по Закону.</p>
+						</div>
+						<a data-fancybox data-src="#popup-order" class="slider__button button button_blue">ПОЛУЧИТЬ Бесплатную консультацию</a>
+					</div>
+					<div class="slider__image"><img src="upload/slider/2.png" alt=""></div>
+				</div>
+			</div>
+			<div class="slide slider__item slider__item-3 fondation" data-anchor="slide3">
+				<div class="container">
+					<div class="slider__title title">Услуги</div>
+					<div class="slider__content">
+						<div class="slider__subtitle">Вывод заблокированных по 115-ФЗ денежных средств</div>
+						<div class="slider__text">
+							<p>По 115-ФЗ, при возникновении сомнений в операциях клиента, банк может заблокировать расчетный счет организации.  Банк уже навряд ли разблокирует счет и еще маловероятней продолжит с вами сотрудничать, скорее всего попросит закрыть счет (а многие банки за это дополнительно берут комиссию) и перевести деньги на другой счет, где поступившие «в связи с закрытием» средства сразу заблокируются другим банком. Деньги так и останутся зависшими.</p>
+							<p>Мы поможем вернуть вам ваши деньги с заблокированного счета.</p>
+						</div>
+						<a data-fancybox data-src="#popup-order" class="slider__button button button_blue">ПОЛУЧИТЬ Бесплатную консультацию</a>
+					</div>
+					<div class="slider__image"><img src="upload/slider/3.png" alt=""></div>
+				</div>
+			</div>
+			<div class="slide slider__item slider__item-4 fondation" data-anchor="slide4">
+				<div class="container">
+					<div class="slider__title title">Услуги</div>
+					<div class="slider__content">
+						<div class="slider__subtitle">ОСПАРИВАНИЕ РЕШЕНИЙ НАЛОГОВОЙ ИНСПЕКЦИИ</div>
+						<div class="slider__text">
+							<p>Составление/оформление грамотных жалоб на действия налоговых органов при отказах в переезде, регистрации, при доначислении налогов в ходе выездных проверок, при неправомерном запросе документов в ходе камеральных проверок. </p>
+							<p>Правильно составленная мотивированная жалоба будет передана во все необходимые инстанции вплоть до Центрального аппарата ФНС и при необходимости в суд. Ваши законные интересы будут защищены!</p>
+						</div>
+						<a data-fancybox data-src="#popup-order" class="slider__button button button_blue">ПОЛУЧИТЬ Бесплатную консультацию</a>
+					</div>
+					<div class="slider__image"><img src="upload/slider/4.png" alt=""></div>
+				</div>
+			</div>
+			<div class="slide slider__item slider__item-5 fondation" data-anchor="slide5">
+				<div class="container">
+					<div class="slider__title title">Услуги</div>
+					<div class="slider__content">
+						<div class="slider__subtitle">судебные тяжбы по хозяйственным спорам</div>
+						<div class="slider__text">
+							<p>Представление интересов в судах (арбитраж, общая юрисдикция) первой, апелляционной,  кассационной инстанций, при пересмотре в порядке надзора,  по новым и вновь открывшимся обстоятельствам, на стадии исполнительного производства.</p>
+							<p>Доверьтесь профессиональной команде наших юристов.</p>
+						</div>
+						<div class="slider__subtitle">УМеНЬШЕНИЕ НДС</div>
+						<div class="slider__text">
+							<p>У вас накопился слишком большой входящий НДС (к уплате), но налоговая нагрузка и без того велика – сможем грамотно уменьшить Ваш НДС, без каких-либо претензий со стороны налоговой.</p>
+						</div>
+						<a data-fancybox data-src="#popup-order" class="slider__button button button_blue">ПОЛУЧИТЬ Бесплатную консультацию</a>
+					</div>
+					<div class="slider__image"><img src="upload/slider/5.png" alt=""></div>
+				</div>
+			</div>
+			<div class="slide slider__item slider__item-6 fondation" data-anchor="slide6">
+				<div class="container">
+					<div class="slider__title title">Услуги</div>
+					<div class="slider__content">
+						<div class="slider__subtitle">Сделки с недвижимостью</div>
+						<div class="slider__text">
+							<p>Оформление сделок с недвижимостью в полном объеме от консультативной помощи до дальнейшей регистрации различных видов договоров и прав в Росреестре (Федеральная служба гос. регистрации, кадастра и картографии) в Москве и Московской области.</p>
+						</div>
+						<a data-fancybox data-src="#popup-order" class="slider__button button button_blue">ПОЛУЧИТЬ Бесплатную консультацию</a>
+					</div>
+					<div class="slider__image"><img src="upload/slider/6.png" alt=""></div>
+				</div>
+			</div>
+			<div class="slide slider__item slider__item-7 fondation" data-anchor="slide7">
+				<div class="container">
+					<div class="slider__title title">Услуги</div>
+					<div class="slider__content">
+						<div class="slider__subtitle">Регистрация любых форм собственности</div>
+						<div class="slider__text">
+							<p>Поможем в регистрации МФК, МКК, КПК, ООО, АО, ИП, НКО, Иностранных представительств/филиалов.</p>
+							<ul>
+								<li>Хотите начать свой собственный бизнес — мы расскажем про все формы собственности, их плюсы и минусы;</li>
+								<li>Хотите привлекать деньги под инвестиционные цели — мы расскажем про все возможные инструменты;</li>
+								<li>Вам необходима помощь в регистрации представительства иностранной компании в России — и тут наши профессионалы поделятся своими знаниями и опытом.</li>
+							</ul>
+							<p>Наша команда поможет вам начать свой легальный бизнес.</p>
+						</div>
+						<a data-fancybox data-src="#popup-order" class="slider__button button button_blue">ПОЛУЧИТЬ Бесплатную консультацию</a>
+					</div>
+					<div class="slider__image"><img src="upload/slider/7.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+		<div class="slider__nav">
+			<div class="slider__nav-arrow slider__nav-arrow_left"><i class="icon icon-arrow-left-gray"></i><span>Предыдущий<br>кейс</span></div>
+			<div class="slider__nav-arrow slider__nav-arrow_right"><span>Следующий<br>кейс</span><i class="icon icon-arrow-right-gray"></i></div>
+		</div>
+	</div>
+	<div class="section workers" id="workers-link">
+		<div class="container">
+			<div class="workers__list">
+				<div class="workers__wrap">
+					<div class="slide">
+						<div class="workers__title title">Наши адвокаты и юристы</div>
+						<div class="workers__item">
+							<div class="workers__image"><img src="upload/main.png" alt=""></div>
+							<div class="workers__content">
+								<div class="workers__subtitle">Иванов Иван</div>
+								<div class="workers__desc">АДВОКАТ</div>
+								<div class="workers__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. </p>
+									<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+								</div>
+								<a data-fancybox data-src="#popup-order" class="workers__button button button_blue">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+							</div>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="workers__title title">Наши адвокаты и юристы</div>
+						<div class="workers__item">
+							<div class="workers__image"><img src="upload/main.png" alt=""></div>
+							<div class="workers__content">
+								<div class="workers__subtitle">Иванов Иван</div>
+								<div class="workers__desc">АДВОКАТ</div>
+								<div class="workers__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. </p>
+									<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+								</div>
+								<a data-fancybox data-src="#popup-order" class="workers__button button button_blue">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+							</div>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="workers__title title">Наши адвокаты и юристы</div>
+						<div class="workers__item">
+							<div class="workers__image"><img src="upload/main.png" alt=""></div>
+							<div class="workers__content">
+								<div class="workers__subtitle">Иванов Иван</div>
+								<div class="workers__desc">АДВОКАТ</div>
+								<div class="workers__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. </p>
+									<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+								</div>
+								<a data-fancybox data-src="#popup-order" class="workers__button button button_blue">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider__nav">
+				<div class="slider__nav-arrow slider__nav-arrow_left"><i class="icon icon-arrow-left-gray"></i></div>
+				<div class="slider__nav-arrow slider__nav-arrow_right"><i class="icon icon-arrow-right-gray"></i></div>
+			</div>
+		</div>
+	</div>
+	<div class="section fp-enabled" id="normal-link">
+		<div class="result" id="result">
+			<div class="container">
+				<div class="result__title title">Результаты</div>
+				<div class="result__list row_line">
+					<div class="result__item col_line col-3 wow animated fadeIn" data-wow-duration="1s" data-wow-delay=".2s">
+						<div class="result__num"><span>100</span></div>
+						<div class="result__text">Проданных фирм <br>без каких-либо проблем</div>
+					</div>
+					<div class="result__item col_line col-3 wow animated fadeIn" data-wow-duration="1s" data-wow-delay=".4s">
+						<div class="result__num"><span>500</span> млн.</div>
+						<div class="result__text">Возвращенных <br>средств клиентов с заблокированных <br>счетов</div>
+					</div>
+					<div class="result__item col_line col-3 wow animated fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
+						<div class="result__num"><span>150</span></div>
+						<div class="result__text">Внесенных <br>изменений</div>
+					</div>
+					<div class="result__item col_line col-3 wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+						<div class="result__num"><span>100</span></div>
+						<div class="result__text">Разрешенных хозяйственных <br>и корпоративных споров</div>
+					</div>
+					<div class="result__item col_line col-3 wow animated fadeIn" data-wow-duration="1s" data-wow-delay="1s">
+						<div class="result__num"><span>100</span></div>
+						<div class="result__text">Зарегистрированных  <br>компаний</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contacts" id="contacts">
+			<div class="container">
+				<div class="contacts__title title">Контакты</div>
+				<div class="contacts__wrap">
+					<div class="contacts__content">
+						<div class="contacts__subtitle">Юридическая компания <br>«КОЛИЗЕЙ»</div>
+						<div class="contacts__list">
+							<div class="contacts__item">
+								<p>Телефон:</p>
+								<p><a href="tel:84950000000" class="contacts__phone">8 (495) 000-00-00</a></p>
+							</div>
+							<div class="contacts__item">
+								<p>Время работы:</p>
+								<p>пн-пт: с 10:00 до 20:00</p>
+							</div>
+							<div class="contacts__item">
+								<p>Адрес:</p>
+								<p>ул. Сущёвский Вал, 74</p>
+							</div>
+							<div class="contacts__item">
+								<p>Email:</p>
+								<p><a href="mailto:*****@******.ru">*****@******.ru</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="contacts__map" id="map"></div>
+					 <script>
+					 	
+			      function initMap() {
+			        var uluru = {lat: 55.791022, lng: 37.6305322};
+			        var map = new google.maps.Map(document.getElementById('map'), {
+			          zoom: 17,
+			          center: uluru,
+			          styles: [
+						  {
+						    "elementType": "geometry",
+						    "stylers": [
+						      {
+						        "color": "#f5f5f5"
+						      }
+						    ]
+						  },
+						  {
+						    "elementType": "labels.icon",
+						    "stylers": [
+						      {
+						        "visibility": "off"
+						      }
+						    ]
+						  },
+						  {
+						    "elementType": "labels.text.fill",
+						    "stylers": [
+						      {
+						        "color": "#616161"
+						      }
+						    ]
+						  },
+						  {
+						    "elementType": "labels.text.stroke",
+						    "stylers": [
+						      {
+						        "color": "#f5f5f5"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "administrative.land_parcel",
+						    "elementType": "labels.text.fill",
+						    "stylers": [
+						      {
+						        "color": "#bdbdbd"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "poi",
+						    "elementType": "geometry",
+						    "stylers": [
+						      {
+						        "color": "#eeeeee"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "poi",
+						    "elementType": "labels.text.fill",
+						    "stylers": [
+						      {
+						        "color": "#757575"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "poi.park",
+						    "elementType": "geometry",
+						    "stylers": [
+						      {
+						        "color": "#e5e5e5"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "poi.park",
+						    "elementType": "labels.text.fill",
+						    "stylers": [
+						      {
+						        "color": "#9e9e9e"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "road",
+						    "elementType": "geometry",
+						    "stylers": [
+						      {
+						        "color": "#ffffff"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "road.arterial",
+						    "elementType": "labels.text.fill",
+						    "stylers": [
+						      {
+						        "color": "#757575"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "road.highway",
+						    "elementType": "geometry",
+						    "stylers": [
+						      {
+						        "color": "#dadada"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "road.highway",
+						    "elementType": "labels.text.fill",
+						    "stylers": [
+						      {
+						        "color": "#616161"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "road.local",
+						    "elementType": "labels.text.fill",
+						    "stylers": [
+						      {
+						        "color": "#9e9e9e"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "transit.line",
+						    "elementType": "geometry",
+						    "stylers": [
+						      {
+						        "color": "#e5e5e5"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "transit.station",
+						    "elementType": "geometry",
+						    "stylers": [
+						      {
+						        "color": "#eeeeee"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "water",
+						    "elementType": "geometry",
+						    "stylers": [
+						      {
+						        "color": "#c9c9c9"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "water",
+						    "elementType": "labels.text.fill",
+						    "stylers": [
+						      {
+						        "color": "#9e9e9e"
+						      }
+						    ]
+						  }
+						]
+			        });
+			        var marker = new google.maps.Marker({
+			          position: {lat: 55.791322, lng: 37.6328711},
+			          map: map,
+			          icon: {
+									url: "upload/marker.png",
+									scaledSize: new google.maps.Size(23, 33)
+								}
+			        });
+			        var marker = new google.maps.Marker({
+			          position: {lat: 55.791323, lng: 37.6340000},
+			          map: map,
+			          icon: {
+									url: "upload/logo/logo-line.png",
+									scaledSize: new google.maps.Size(152, 32)
+								}
+			        });
+			   
+			      }
+			    </script>
+			    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFlhVZHx_hZG67ZDi5BBb-O0aqR8ofwUs&callback=initMap"></script>
+				</div>
+			</div>
+		</div>
+		<div class="order">
+			<div class="container">
+				<div class="order__title title">Оставьте заявку</div>
+				<div class="order__elements">
+					<div class="order__wrap">
+						<input type="text" class="order__input input" placeholder="Имя">
+						<input type="text" class="order__input input" placeholder="Email">
+						<button class="order__button button button_blue">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">© ООО «Юридическая компания «Колизей», 2017</div>
+		</footer>
+	</div>
+	
+	</div>
 </body>
 </html>

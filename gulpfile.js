@@ -43,7 +43,12 @@ gulp.task('browser-sync', function() {
 gulp.task('scripts', function() {
 	return gulp.src([ 
 		'src/template/libs/jquery/dist/jquery.js',
-		'src/template/libs/jquery.maskedinput/dist/jquery.maskedinput.min.js'
+		'src/template/libs/jquery.maskedinput/dist/jquery.maskedinput.min.js',
+		'src/template/libs/fancybox/dist/jquery.fancybox.js',
+		'src/template/libs/wow/dist/wow.js',
+		'src/template/libs/fullpage.js/jquery.fullPage.js',
+		'src/template/libs/fullpage.js/vendors/jquery.easings.min.js',
+		'src/template/libs/fullpage.js/vendors/scrolloverflow.min.js'
 		])
 		.pipe(concat('libs.js')) 
 		.pipe(gulp.dest('src/template/scripts')); 
